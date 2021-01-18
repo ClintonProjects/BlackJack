@@ -1,9 +1,9 @@
 package Index;
 
-import Bettorturn.Bettor;
-import Bettorturn.Host;
-import Bettorturn.PlayerTurn;
-import Model.Wallet;
+import Model.WinLoss;
+import Players.Bettor;
+import Players.Host;
+import Players.PlayerTurn;
 
 public class GameIndex {
 
@@ -17,14 +17,16 @@ public class GameIndex {
 		BettorWin, BettorFirstTurn, HostFirstTurn, PlayerTurn, PlayerHit, PlayerStay, HostTurn, BettorLoss, Draw
 	}
 
-	private static Wallet Wallet = new Wallet();
+	//All Objects
+	private static WinLoss winLoss = new WinLoss();
 	private static Host host = new Host();
 	private static Bettor bettor = new Bettor();
 
+	//the index which is decided by switch statement using enums to declare the section 
 	public static void gameIndex(GameState currentPlayerState) {
 		switch (currentPlayerState) {
 		case BettorWin:
-			Wallet.addWin();
+			winLoss.addWin();
 			System.out.println("The player has won!");
 			resetGame();
 			break;
@@ -44,12 +46,12 @@ public class GameIndex {
 			host.hit();
 			break;
 		case BettorLoss:
-			Wallet.addLoss();
+			winLoss.addLoss();
 			System.out.println("The player has loss");
 			resetGame();
 			break;
 		case Draw:
-			Wallet.addDraws();
+			winLoss.addDraws();
 			System.out.println("The game has ended in an draw");
 			resetGame();
 			break;
@@ -59,10 +61,11 @@ public class GameIndex {
 		}
 	}
 
+	// reset the 
 	public static void resetGame() {
 		host = new Host();
 		bettor = new Bettor();
-		Wallet.print();
+		winLoss.print();
 		PlayerTurn.reset();
 		gameIndex(GameState.HostFirstTurn);
 	}

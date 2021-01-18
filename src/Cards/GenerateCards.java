@@ -35,10 +35,10 @@ public class GenerateCards {
 			}
 
 		for (int i = 0; i <= 3; i++) {
-			card = new Card("Ace", 1, faceCards[3]);
+			card = new Card("Ace", 1, List[i]);
 			allCards.add(card);
 		}
-		
+
 		// fixes the face value / The 1 and 11 will be handled later.
 		allCards.get(allCards.size() - 1).setCardValue(1);
 		GenerateCards.allCards = allCards;
@@ -46,13 +46,12 @@ public class GenerateCards {
 
 	public void print() {
 		// Prints all the cards
-		//Java 8:
+		// Java 8:
 		allCards.forEach(i -> System.out.print(i.abbreviatedCard() + ","));
-		//Java 7:
-		//for (Card card : allCards) {
-		//System.out.print(card.abbreviatedCard() + ",");
-		//}
+		// Java 7:
+		// for (Card card : allCards) {
+		// System.out.print(card.abbreviatedCard() + ",");
+		// }
 	}
 
-	
 }

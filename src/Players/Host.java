@@ -1,4 +1,4 @@
-package Bettorturn;
+package Players;
 
 import Index.GameIndex;
 import Index.GameIndex.GameState;

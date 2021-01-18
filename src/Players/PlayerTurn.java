@@ -1,4 +1,4 @@
-package Bettorturn;
+package Players;
 
 import java.util.LinkedList;
 import java.util.Random;

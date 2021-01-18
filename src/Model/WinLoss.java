@@ -1,12 +1,17 @@
 package Model;
 
-public class Wallet {
+public class WinLoss {
+	
+	/*
+	 * Author @Clinton Bates Student Code: 20253060 This Object is used for the
+	 * This class simply stores the players win and loss's
+	 */
 
 	private int wins;
 	private int draws;
 	private int loss;
 
-	public Wallet() {
+	public WinLoss() {
 		this.wins = 0;
 		this.draws = 0;
 		this.loss = 0;

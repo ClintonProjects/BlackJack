@@ -42,7 +42,7 @@ public class PlayerScore {
 		else
 			return getCardScorePreAce();
 	}
-
+	
 	public boolean getCardsContainsAce() {
 		// Java 7
 		// for (Card card : currentCards) {
@@ -55,6 +55,7 @@ public class PlayerScore {
 	}
 
 	public String totalStringMessage() {
+		//return the ace value in string format:
 		if (getCardsContainsAce())
 			return String.valueOf(getCardScorePreAce()) + "/" + String.valueOf(getCardScorePreAce() + 10);
 		else

@@ -1,4 +1,4 @@
-package Bettorturn;
+package Players;
 
 import java.util.Scanner;
 
@@ -32,7 +32,7 @@ public class Bettor extends PlayerTurn {
 	}
 
 	public void playerChoice() {
-		//Let the player choose weather they are going to hit or stay.
+		// Let the player choose weather they are going to hit or stay.
 		String choice;
 		boolean temp = false;
 		System.out.println("Would you like to hit or stay?");
@@ -41,9 +41,13 @@ public class Bettor extends PlayerTurn {
 			if (choice.equalsIgnoreCase("hit") || choice.equalsIgnoreCase("h") || choice.equalsIgnoreCase("stay")
 					|| choice.equalsIgnoreCase("s"))
 				temp = true;
-			else
+			else if (choice.equalsIgnoreCase("end")) {
+				System.out.println("The game has shutdown");
+				System.exit(0);
+			} else
 				System.out.println("You have entered an invaild command");
 		} while (temp == false);
+		
 		if (choice.equalsIgnoreCase("hit") || choice.equalsIgnoreCase("h"))
 			GameIndex.gameIndex(GameState.PlayerHit);
 		else if (choice.equalsIgnoreCase("stay") || choice.equalsIgnoreCase("s"))

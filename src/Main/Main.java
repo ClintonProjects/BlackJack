@@ -1,12 +1,12 @@
 package Main;
 import java.util.LinkedList;
 
-import Bettorturn.Bettor;
-import Bettorturn.Host;
 import Cards.GenerateCards;
 import Index.GameIndex;
 import Index.GameIndex.GameState;
 import Model.Card;
+import Players.Bettor;
+import Players.Host;
 
 public class Main {
 	
@@ -24,6 +24,8 @@ public class Main {
 	}
 	
 	public static void onStart() {
+		System.out.println("you can type 'end' at any time to end the game");
+		System.out.println("------------------------------------");
 		GenerateCards generateCards = new GenerateCards();
 		generateCards.setCards();
 		GameIndex.gameIndex(GameState.HostFirstTurn);
