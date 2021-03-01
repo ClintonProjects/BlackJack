@@ -8,7 +8,7 @@ import Players.PlayerTurn;
 public class GameIndex {
 
 	/*
-	 * Author @Clinton Bates Student Code: 20253060 This is an index, the code will
+	 * Author @Clinton Student Code: 20253060 This is an index, the code will
 	 * always push back to the index for each phase of the game, sort of like
 	 * recursion method.
 	 */
