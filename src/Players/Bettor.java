@@ -9,7 +9,7 @@ import Model.Card;
 public class Bettor extends PlayerTurn {
 
 	/*
-	 * Author @Clinton Bates Student Code: 20253060
+	 * Author @Clinton Student Code: 20253060
 	 * 
 	 * This class handles the bettor
 	 */
