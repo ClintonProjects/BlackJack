@@ -7,7 +7,7 @@ import Model.Card;
 public class GenerateCards {
 
 	/*
-	 * Author @Clinton Bates Student Code: 20253060
+	 * Author @Clinton Student Code: 20253060
 	 * 
 	 * This Class/Object is used to generates cards.
 	 */
