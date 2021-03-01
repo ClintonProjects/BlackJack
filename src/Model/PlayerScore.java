@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class PlayerScore {
 
 	/*
-	 * Author @Clinton Bates Student Code: 20253060 This Object is used for the
+	 * Author @Clinton Student Code: 20253060 This Object is used for the
 	 * creation of cards
 	 */
 
