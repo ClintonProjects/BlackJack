@@ -7,7 +7,7 @@ import Model.Card;
 public class Host extends PlayerTurn {
 
 	/*
-	 * Author @Clinton Bates Student Code: 20253060 This class handles the AI/dealer
+	 * Author @Clinton Student Code: 20253060 This class handles the AI/dealer
 	 * (The host as I am going to refer it as)
 	 */
 
