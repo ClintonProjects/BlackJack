@@ -3,7 +3,7 @@ package Model;
 public class WinLoss {
 	
 	/*
-	 * Author @Clinton Bates Student Code: 20253060 This Object is used for the
+	 * Author @Clinton Student Code: 20253060 This Object is used for the
 	 * This class simply stores the players win and loss's
 	 */
 
