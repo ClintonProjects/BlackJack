@@ -10,7 +10,7 @@ import Model.PlayerScore;
 public abstract class PlayerTurn {
 
 	/*
-	 * Author @Clinton Bates Student Code: 20253060
+	 * Author @Clinton Student Code: 20253060
 	 * 
 	 * This is the player actions.
 	 */
