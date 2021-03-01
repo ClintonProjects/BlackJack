@@ -11,7 +11,7 @@ import Players.Host;
 public class Main {
 	
 	/*
-	 * Author @Clinton Bates Student Code: 20253060
+	 * Author @Clinton Student Code: 20253060
 	 * 
 	 * This is the main class, I normally keep the main empty and won't have something like onStart in same class,
 	 * but in this example, because this only small project, I decided to keep the 2 in same class.
